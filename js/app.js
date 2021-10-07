@@ -1,7 +1,7 @@
 //initialisation du panier qui stocke les cours dans chaque élement d'un tableau
-let panier = [0,0,0,0,0,0,0];
+let panier = [0,0,0,0,0,0,0,0];
 //initialisation des titres des cours qui stocke les titres dans chaque élement d'un tableau
-let titresCours = ["UX/UI", "PHP 8", "React JS", "Node JS", "MySQL","Python","VueJS"];
+let titresCours = ["UX/UI", "PHP 8", "React JS", "Node JS", "MySQL","Python","VueJS","test"];
 
 // boucle qui permet que à chaque fois on rajoute un élement à nos 2 tableaux panier et titreCours, cela permet donc de créer un nouveau cours avec son cours prix etc ...
 for (i=5; i<titresCours.length; i++){
@@ -35,7 +35,7 @@ document.querySelector('body').appendChild(notifZone);
 // création de 3 variables pour récuperer des éléments du fichier HTML
 const courses = document.getElementsByClassName('course__item');    //balise contenant un cours
 const infoCours = document.getElementsByClassName('info__card');    //infos sur un cours
-const carts = document.getElementsByClassName('add-to-cart');       //bouton ajouter au panier
+const carts = document.querySelectorAll('.add-to-cart');       //bouton ajouter au panier
 
 //récupération de l'id empty-card qui est l'id du bouton --> Vider le panier 
 document.getElementById('empty-cart').addEventListener('click', resetPanier);
